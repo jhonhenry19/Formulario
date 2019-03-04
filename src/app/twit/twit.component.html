@@ -1,0 +1,41 @@
+<div>
+    <h2>Desarrollo Web</h2>
+    <h4>Jhon Henry Suarez</h4>
+    <h4>Luis Morales </h4>
+    <img alt="Politécnico Grancolombiano" src="https://esden.es/wp-content/uploads/2015/03/poligram-300x200.jpg" width="300" height="200" class="">
+  <h4>Nombre: {{miTwitt.name}}</h4>
+  <h4>Apellido: {{miTwitt.Last_name}}</h4>
+  <h4>Usuario: {{miTwitt.user}}</h4>
+  <h4>Twitt: {{miTwitt.twitt}}</h4>
+    <br><br><br>
+    <mat-form-field class="example-full-width">
+      <label>Nombre:
+       <input required matInput [(ngModel)]="miTwitt.name">
+      </label> 
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <label>Apellido:
+        <input required matInput [(ngModel)]="miTwitt.Last_name">
+      </label>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+    <label>Usuario:
+      <input required matInput [(ngModel)]="miTwitt.user">
+    </label>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+    <label>Twitt:
+      <textarea required matInput  [(ngModel)]="miTwitt.twitt"></textarea>
+    </label>
+    </mat-form-field>
+  
+  <br><br><br>
+  <div class="example-button-row">
+    <button  mat-button >Enviar Datos</button>
+  </div>
+  
+</div>
+
